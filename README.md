@@ -1,3 +1,4 @@
+![PHP Waveform2PNG Library](examples/bars_example.png)
 PHP Waveform2PNG Library
 ===
 
@@ -32,10 +33,15 @@ Original code by [Andrew Freiday](http://andrewfreiday.com).
 
 - Change the settings (or leave them default):
 > $graph->setHeight(200);
+>
 > $graph->setWidth(1200);
+>
 > $graph->setBackground('');
+>
 > $graph->setForeground('#35cc32');
+>
 > $graph->setDetail(20);
+>
 > $graph->setType('waveform');
 
 - Load your file and process it:
@@ -45,6 +51,16 @@ Original code by [Andrew Freiday](http://andrewfreiday.com).
 - Output image to browser or save it to file:
 > $graph->saveImage('waveform_example.png'); // Saves image to file
 > $graph->outputImage(); // Outputs image to browser
+
+### Available graph types
+
+##### Waveform:
+
+![Waveform graph](examples/waveform_example.png)
+
+##### Bars:
+
+![Bars graph](examples/bars_example.png)
 
 ### Image generation options
 
@@ -57,22 +73,15 @@ Main settings are specified with methods
 - setDefail($amount) - Sets detalization level to $amount. (The lower the number, the less data points are skipped, thus resulting in higher detail waveform);
 - setType($type) - Sets graph type to $type;
 
+
+### Multicolor graph
+
 There is also a method to create graph with different color regions:
 
 - addColor($timeMin, $timeMax, $color) - Sets color of graph to $color on region from $timeMin to $timeMax secs. Example:
 
 ![Multicolor graph](examples/multicolor_example.png)
 
-
-### Available graph types
-
-##### Waveform:
-
-![Waveform graph](examples/waveform_example.png)
-
-##### Bars:
-
-![Bars graph](examples/bars_example.png)
 
 ### Other notes
 
