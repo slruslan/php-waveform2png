@@ -46,10 +46,12 @@ Original code by [Andrew Freiday](http://andrewfreiday.com).
 
 - Load your file and process it:
 > $graph->loadFile("test.mp3");
+>
 > $graph->process();
 
 - Output image to browser or save it to file:
 > $graph->saveImage('waveform_example.png'); // Saves image to file
+>
 > $graph->outputImage(); // Outputs image to browser
 
 ### Available graph types
